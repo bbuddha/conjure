@@ -1,0 +1,25 @@
+{
+  "name": "conjure",
+  "version": "1.0.0",
+  "description": "TBD",
+  "main": "app.js",
+  "scripts": {
+    "test": "testConjure"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bbuddha/conjure.git"
+  },
+  "keywords": [
+    "conjure"
+  ],
+  "author": "Bobby Buddha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bbuddha/conjure/issues"
+  },
+  "homepage": "https://github.com/bbuddha/conjure#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
