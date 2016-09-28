@@ -18,9 +18,9 @@ function app(factory) {
 		server.use(restify.CORS());
 		var services = {helloService: factory.getHelloService()};
 		factory.configureApiRoutes(server, services);
-		var internalPort = 9084;
-		server.listen(internalPort, function () {
-			var serverStartedMessage = 'Server started @ ' + internalPort + ' inside the container for external port: ' + internalPort;
+		var port = 9084;
+		server.listen(port, function () {
+			var serverStartedMessage = 'Server started @ port: ' + port ;
 			//log.info(serverStartedMessage);
 			console.log(serverStartedMessage);
 		});
