@@ -6,7 +6,7 @@ function ServiceFactory() {
 	this.getHelloService = getHelloService;
 
 	function configureApiRoutes(server, controllers) {
-		return require('./api-router')(server, controllers);
+		return require('../back-end/api-router')(server, controllers);
 	}
 
 	function getRestify() {
@@ -14,7 +14,7 @@ function ServiceFactory() {
 	}
 
 	function getHelloService() {
-		return require('./hello-service');
+		return require('../back-end/hello-service');
 	}
 }
 
