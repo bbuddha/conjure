@@ -1,6 +1,6 @@
 'use strict';
 
-var factory = require('./back-end/service-factory');
+var factory = require('./api/service-factory');
 
 app(factory).start();
 
