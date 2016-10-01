@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head ng-controller="AppCtrl as appCtrl">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title ng-bind="appCtrl.pageTitle"></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="bower_components/fontawesome/css/font-awesome.css"/>
+
+    <link rel="stylesheet" href="css/app.css">
+
+</head>
+<body>
+<ul class="menu">
+    <li><a href="#/home">home</a></li>
+    <li><a href="#/number-generator">number generator</a></li>
+</ul>
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="container" ui-view="main"></div>
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+<!-- WARNING: You will want to load all of your *.module.js files first since these
+are where the definitions for the modules are.  Angular will barf if you reference them
+before they are defined -->
+<script type="text/javascript" src="node_modules/angular/angular.js"></script>
+<!--<script type="text/javascript" src="node_modules/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>-->
+<script type="text/javascript" src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+
+<!-- Load Services First -->
+<!--<script type="text/javascript" src="common/numberGenerator.module.js"></script>-->
+<!--<script type="text/javascript" src="common/numberGenerator.service.js"></script>-->
+
+<!--<script type="text/javascript" src="home/home.module.js"></script>-->
+<!--<script type="text/javascript" src="home/home.route.js"></script>-->
+<!--<script type="text/javascript" src="home/home.js"></script>-->
+
+<!--<script type="text/javascript" src="numbers/numbers.module.js"></script>-->
+<!--<script type="text/javascript" src="numbers/numbers.route.js"></script>-->
+<!--<script type="text/javascript" src="numbers/numbers.js"></script>-->
+
+<script type="text/javascript" src="app.module.js"></script>
+<script type="text/javascript" src="app.route.js"></script>
+<script type="text/javascript" src="app.controller.js"></script>
+
+</body>
+</html>
