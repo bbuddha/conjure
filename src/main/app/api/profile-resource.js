@@ -1,17 +1,17 @@
 'use strict';
 
 function profileResource(profileDao) {
-	return {
-		getProfiles: getProfiles,
-		createProfile: createProfile
-	}
-	function getProfiles() {
+  return {
+    getProfiles: getProfiles,
+    createProfile: createProfile
+  };
+  function getProfiles() {
 
-	}
+  }
 
-	function createProfile() {
+  function createProfile() {
 
-	}
+  }
 }
 
 module.exports = profileResource;
