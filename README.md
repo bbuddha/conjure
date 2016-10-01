@@ -1,2 +1,2 @@
 # conjure
-TBD
+How to start app? npm start
