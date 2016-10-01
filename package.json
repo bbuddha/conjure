@@ -4,7 +4,7 @@
   "description": "TBD",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node server.js",
     "test": "testConjure"
   },
   "repository": {
