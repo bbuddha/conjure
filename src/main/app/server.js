@@ -11,7 +11,7 @@ function app(factory) {
 		server.use(restify.queryParser());
 		server.use(restify.bodyParser());
 		server.use(restify.CORS());
-		var mongoService = factory.getMongoService('mongodb://ds041939.mlab.com:41939/conjure');
+		var mongoService = factory.getMongoService('mongodb://dev:password@ds041939.mlab.com:41939/conjure');
 		var profileDao = factory.getProfileDao(mongoService.getConnection());
 		var services = {helloService: factory.getHelloService(), profileResource: factory.getProfileResource(profileDao)};
 		factory.configureApiRoutes(server, services);
@@ -22,7 +22,7 @@ function app(factory) {
 		});
 		require('shutdown-handler').on('exit', function (e) {
 			mongoService.closeConnection();
-			console.log("This application shall not be closed!");
+			console.log("Conjure shutdown successful!");
 		});
 	}
 }

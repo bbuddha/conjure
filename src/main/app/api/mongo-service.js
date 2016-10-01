@@ -8,8 +8,15 @@ function mongoService(mongoDbUri) {
 			console.log(err);
 			throw err;
 		}
-		//Database connection not yet fully configured.
+		connection = database;
 		console.log('Connection to MongoDB successful!');
+		var collection = database.collection('profiles');
+            collection.find().each(function(err, profile){
+            if(profile)
+            console.dir(profile);
+            }
+            );
+
 	});
 	setTimeout(function () {
 		if (connection) {
@@ -17,7 +24,7 @@ function mongoService(mongoDbUri) {
 		} else {
 			console.warn('Connection to CONJURE database not yet successful. Please check the logs for errors.')
 		}
-	}, 3000);
+	}, 1000);
 
 	return {
 		getConnection: getConnection,

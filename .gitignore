@@ -11,4 +11,5 @@ logs
 *.ipr
 *.iws
 *.db
+*.log
 
