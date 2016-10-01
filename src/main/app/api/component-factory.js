@@ -20,15 +20,15 @@ function ServiceFactory() {
 		return require('./hello-service');
 	}
 
-	function getProfileDao(connection){
+	function getProfileDao(connection) {
 		return require('./profile-dao')(connection);
 	}
 
-	function getProfileResource(profileDao){
+	function getProfileResource(profileDao) {
 		return require('./profile-resource')(profileDao);
 	}
 
-	function getMongoService(mongoDbUri){
+	function getMongoService(mongoDbUri) {
 		return require('./mongo-service')(mongoDbUri);
 	}
 }

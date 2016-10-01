@@ -1,4 +1,4 @@
-function A (){
+function A() {
 	this.val = '123'
 	return 'Function A';
 }
