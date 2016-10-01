@@ -26,6 +26,14 @@
     "mongodb": "^2.2.10",
     "mongoose": "^4.6.1",
     "restify": "^4.0.4",
-    "shutdown-handler": "^1.0.1"
+    "shutdown-handler": "^1.0.1",
+    "angular": "^1.x",
+    "angular-animate": "^1.x",
+    "angular-mocks": "^1.x",
+    "angular-resource": "^1.x",
+    "angular-route": "^1.x",
+    "bootstrap": "^3.x",
+    "jquery": "^2.x",
+    "angular-material": "^1.x"
   }
 }
