@@ -6,7 +6,7 @@ App Setup Instructions
 
 Mac Users - How to install node from command line?
 --------------------------------------------------
-#1) /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-#2) brew install node
+#####1) /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#####2) brew install node
 
 
