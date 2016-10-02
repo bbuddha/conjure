@@ -1,1 +1,3 @@
-console.log('Hi ...');
+#!/usr/bin/env node 
+eslint .
+console.log('hi...');
