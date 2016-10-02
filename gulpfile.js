@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var gulpUtil = require('gulp-util');
 const eslint = require('gulp-eslint');
 
-gulp.task('default', ['lint'], function() {
+gulp.task('default', ['lint-fix', 'lint'], function() {
   return gulpUtil.log('Gulp is running...');
 });
 
@@ -21,4 +21,11 @@ gulp.task('lint', function() {
     // To have the process exit with an error code (1) on
     // lint error, return the stream and pipe to failAfterError last.
     .pipe(eslint.failAfterError());
+});
+
+gulp.task('lint-fix', function() {
+  return gulp.src(['**/*.js', '!node_modules/**'])
+    .pipe(eslint({fix: true}))
+    .pipe(eslint.format())
+    .pipe(gulp.dest('.'));// <-- update original files
 });
