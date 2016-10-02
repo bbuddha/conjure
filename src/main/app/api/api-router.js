@@ -1,7 +1,8 @@
 'use strict';
 
-function apiRouter(server, services) {
-  server.get('/api/hello/:name', services.helloService.sayHello);
+function apiRouter(server, components) {
+  server.get('/api/hello/:name', components.helloService.sayHello);
+  server.get('/api/profiles', components.profileResource.getProfiles);
   return module;
 }
 

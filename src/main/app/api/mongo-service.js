@@ -10,13 +10,13 @@ function mongoService(mongoDbUri) {
     }
     connection = database;
     console.log('Connection to MongoDB successful!');
-    var collection = database.collection('profiles');
-    collection.find().each(function(err, profile) {
-      if (!err && profile) {
-        console.dir(profile);
-      }
-    }
-    );
+    // var collection = database.collection('profiles');
+    // collection.find().each(function(err, profile) {
+    //   if (!err && profile) {
+    //     console.dir(profile);
+    //   }
+    // }
+    // );
   }
   );
   setTimeout(function() {

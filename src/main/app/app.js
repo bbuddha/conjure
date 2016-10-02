@@ -13,7 +13,7 @@ function app(factory) {
     // server.use(restify.CORS());
     var MONGO_DB_URL = 'mongodb://dev:password@ds041939.mlab.com:41939/conjure';
     var mongoService = factory.getMongoService(MONGO_DB_URL);
-    var profileDao = factory.getProfileDao(mongoService.getConnection());
+    var profileDao = factory.getProfileDao(mongoService);
     var services = {helloService: factory.getHelloService(),
       profileResource: factory.getProfileResource(profileDao)};
     factory.configureApiRoutes(server, services);
