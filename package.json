@@ -14,7 +14,7 @@
     "update-webdriver": "webdriver-manager update",
     "preprotractor": "npm run update-webdriver",
     "protractor": "protractor protractor.conf.js",
-    "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
+    "precommit-msg": "echo 'Pre-commit checks....' && exit 0"
   },
   "pre-commit": [ "precommit-msg", "lint" ],
   "repository": {
