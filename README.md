@@ -1,6 +1,14 @@
 # conjure
-App Setup Instructions
-----------------------
-#### 1. Install Node --> https://docs.npmjs.com/getting-started/installing-node
-#### 2. npm install
-#### 3. npm start
+#### Prerequisite
+-----------------
+## Install Node JS
+## Install Git
+#
+
+####How to run App locally?
+
+#### 1. git clone https://github.com/bbuddha/conjure.git
+#### 2. npm start
+
+####How to test your app is running locally?
+#### Go to http://localhost:9084/api/profiles
