@@ -13,9 +13,10 @@
     "preupdate-webdriver": "npm install",
     "update-webdriver": "webdriver-manager update",
     "preprotractor": "npm run update-webdriver",
-    "protractor": "protractor protractor.conf.js"
+    "protractor": "protractor protractor.conf.js",
+    "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
-  "pre-commit": [ "lint" ],
+  "pre-commit": [ "precommit-msg", "lint" ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bbuddha/conjure.git"
