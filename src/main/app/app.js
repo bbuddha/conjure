@@ -17,7 +17,7 @@ function app(factory) {
     var services = {helloService: factory.getHelloService(),
       profileResource: factory.getProfileResource(profileDao)};
     factory.configureApiRoutes(server, services);
-    var port = 9084;
+    var port = process.env.PORT || 9084;
     server.listen(port, function() {
       var serverStartedMessage = 'Server started @ port: ' + port;
       console.log(serverStartedMessage);
