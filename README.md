@@ -1,4 +1,5 @@
 # conjure
+[![Build Status](https://travis-ci.org/bbuddha/conjure.svg?branch=master)](https://travis-ci.org/bbuddha/conjure)
 App Setup Instructions
 ----------------------
 #### 1. Install Node --> https://docs.npmjs.com/getting-started/installing-node
